@@ -1,8 +1,8 @@
 #pragma once
 
 #if !defined(NDEBUG)
-#define IF_RELEASE(x) x
-#define IF_DEBUG(x) 
+#define IF_RELEASE(x) 
+#define IF_DEBUG(x) x
 
 #include <iostream>
 
@@ -40,8 +40,8 @@ std::string type(T && t) {
   std::cout << '\n';
 
 #else //NDEBUG
-#define IF_RELASE(x)
-#define IF_DEBUG(x) x
+#define IF_RELASE(x) x
+#define IF_DEBUG(x) 
 
 #define debug_print(...)
 #define debug_vars(...)

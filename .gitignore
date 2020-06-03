@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+include/map.h
+test
+.ccls-cache/
